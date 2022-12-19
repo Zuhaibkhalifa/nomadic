@@ -1,0 +1,299 @@
+.main {
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 0 20px;
+}
+.main2 {
+  max-width: 350px;
+  margin: 30px auto;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+form {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  color: white;
+}
+form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 16px;
+  color: black;
+  background: url("../Icons/search\ \(1\).png") no-repeat right;
+  background-size: 30px;
+}
+.but {
+  padding: 10px 55px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+}
+
+.backimage {
+  background-image: url(../Images/kyr.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.backimage1 {
+  background-image: url(../Images/africa.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px !important;
+  height: 200px !important;
+  border-radius: 20px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: flex-end !important;
+  cursor: pointer !important;
+}
+.backimage2 {
+  background-image: url(../Images/dare.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.slider {
+  background-color: #fff9ea;
+  padding: 20px 20px;
+}
+.bwrapper {
+  padding: 10px;
+}
+.btn {
+  background-color: #f2bb06;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  padding: 5px 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.p6 {
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+}
+.pp {
+  color: white;
+  padding: 5px;
+}
+.ppp {
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.africa {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-weight: bold;
+  font-size: 22px;
+  padding: 5px;
+}
+.slider2 {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    height: 100px;
+  }
+}
+.navbar {
+  width: 100%;
+  height: 80px;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 0.5);
+  margin: auto;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* .navbar {
+  width: 50%;
+  height: 100px;
+  border-radius: 30px;
+  margin: 50px auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 0.5);
+  align-items: center;
+  padding: 0 50px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+} */
+
+.share {
+  width: 25px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 30%;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+.box {
+  width: 70%;
+  height: 120px;
+  background-color: white;
+  border-radius: 30px;
+  margin: auto;
+  bottom: 110px;
+  position: relative;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.ic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grad {
+  background-image: url(../Icons/download-arrow.png);
+  background-position: right;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  padding: 25px 30px;
+  background: linear-gradient(
+    90deg,
+    rgba(234, 87, 163, 1) 22%,
+    rgba(242, 183, 10, 1) 61%,
+    rgba(242, 183, 10, 1) 100%
+  );
+  border: none;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  display: block;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.h4 {
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 2rem;
+  margin-bottom: 50px;
+}
+.tribe {
+  padding: 50px;
+}
+.tourguide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tour {
+  padding: 50px;
+}
+.h5 {
+  padding: 10px 10px;
+  font-size: 30px;
+  font-weight: 300;
+}
+.man {
+  display: flex;
+  align-items: center;
+}
+
+.hh {
+  font-weight: 300;
+  padding: 5px;
+}
+.hhh {
+  font-weight: 200;
+  font-size: 20px;
+  padding: 5px;
+}
+.hhhh {
+  background-image: url(../Icons/kenya.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30px;
+  font-weight: 200;
+  font-size: 20px;
+  padding: 5px;
+  color: grey;
+}
+/* .green {
+  width: 50%;
+  height: 120px;
+  border-radius: 30px;
+  background-color: #2b9f60;
+  margin: 50px auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.5);
+} */
+
+.green {
+  width: 100%;
+  height: 80px;
+  background-color: #2b9f60;
+  color: white;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 0.5);
+  margin-top: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.review {
+  padding: 50px;
+}
+
+@media only screen and (max-width: 425px) {
+  .h4 {
+    font-size: 15px;
+  }
+  .res {
+    font-size: 20px;
+  }
+}
