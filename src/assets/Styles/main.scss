@@ -43,49 +43,18 @@ form input {
   box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
 }
 
-.backimage {
-  background-image: url(../Images/kyr.jpg);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 200px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.backimage1 {
-  background-image: url(../Images/africa.jpg);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 300px !important;
-  height: 200px !important;
-  border-radius: 20px !important;
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: flex-end !important;
-  cursor: pointer !important;
-}
-.backimage2 {
-  background-image: url(../Images/dare.jpg);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 300px;
-  height: 200px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
 .slider {
   background-color: #fff9ea;
   padding: 20px 20px;
 }
 .bwrapper {
   padding: 10px;
+}
+.bbwrapper{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .btn {
   background-color: #f2bb06;
@@ -123,14 +92,9 @@ form input {
   display: flex;
   align-items: center;
   margin: 20px 0;
+  padding: 0 20px;
 }
 
-@media only screen and (max-width: 600px) {
-  .navbar {
-    width: 100%;
-    height: 100px;
-  }
-}
 .navbar {
   width: 100%;
   height: 80px;
@@ -142,21 +106,6 @@ form input {
   justify-content: space-around;
   align-items: center;
 }
-/* .navbar {
-  width: 50%;
-  height: 100px;
-  border-radius: 30px;
-  margin: 50px auto;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 0 5px 20px rgb(0 0 0 / 0.5);
-  align-items: center;
-  padding: 0 50px;
-  color: white;
-  font-size: 15px;
-  font-weight: bold;
-} */
 
 .share {
   width: 25px;
@@ -174,7 +123,7 @@ form input {
   background-color: white;
   border-radius: 30px;
   margin: auto;
-  bottom: 110px;
+  bottom: 65px;
   position: relative;
   box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
   display: flex;
@@ -210,67 +159,38 @@ form input {
   font-weight: bold;
   cursor: pointer;
 }
-.h4 {
-  font-size: 20px;
-  font-weight: 100;
-  line-height: 2rem;
-  margin-bottom: 50px;
-}
+
 .tribe {
-  padding: 50px;
+  padding: 0px 50px;
 }
 .tourguide {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .tour {
-  padding: 50px;
+  padding: 20px 50px;
 }
-.h5 {
-  padding: 10px 10px;
-  font-size: 30px;
-  font-weight: 300;
-}
+
 .man {
   display: flex;
   align-items: center;
 }
 
-.hh {
-  font-weight: 300;
-  padding: 5px;
-}
-.hhh {
-  font-weight: 200;
-  font-size: 20px;
-  padding: 5px;
-}
+
+
 .hhhh {
   background-image: url(../Icons/kenya.png);
-  background-position: center;
+  background-position: right;
   background-repeat: no-repeat;
   background-size: 30px;
-  font-weight: 200;
+  font-weight: 100;
   font-size: 20px;
   padding: 5px;
+  width: 100px;
   color: grey;
 }
-/* .green {
-  width: 50%;
-  height: 120px;
-  border-radius: 30px;
-  background-color: #2b9f60;
-  margin: 50px auto;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
-  color: white;
-  font-weight: bold;
-  box-shadow: 0 5px 10px rgb(0 0 0 / 0.5);
-} */
+
 
 .green {
   width: 100%;
@@ -286,14 +206,7 @@ form input {
   align-items: center;
 }
 .review {
-  padding: 50px;
+  padding:20px 50px;
 }
 
-@media only screen and (max-width: 425px) {
-  .h4 {
-    font-size: 15px;
-  }
-  .res {
-    font-size: 20px;
-  }
-}
+

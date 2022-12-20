@@ -10,6 +10,7 @@ import share from "../../assets/Icons/upload.png";
 import star from "../../assets/Icons/star.png";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
+import profile from "../../assets/Images/profile.jpg";
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -34,40 +35,40 @@ const Traveller = () => {
       </section>
       <section className="box">
         <div className="ic">
-          <img src={icon1} style={{ width: "50px" }} alt="icons" />
-          <p>region</p>
-          <h4 className="res">Africa</h4>
+          <img src={icon1} style={{ width: "35px" }} alt="icons" />
+          <h6>region</h6>
+          <h5>Africa</h5>
         </div>
         <div className="ic">
-          <img src={icon2} style={{ width: "50px" }} alt="icons" />
-          <p>Duration </p>
-          <h4 className="res">7 Days</h4>
+          <img src={icon2} style={{ width: "35px" }} alt="icons" />
+          <h6>Duration </h6>
+          <h5>7 Days</h5>
         </div>
         <div className="ic">
-          <img src={icon3} style={{ width: "50px" }} alt="icons" />
-          <p>Max Traveller</p>
-          <h4 className="res">10</h4>
+          <img src={icon3} style={{ width: "35px" }} alt="icons" />
+          <h6>Max Traveller</h6>
+          <h5>10</h5>
         </div>
       </section>
       <section className="tribe">
-        <h2 className="res">Bolsonoro Tribes</h2>
-        <h4 className="h4">
+        <h2>Bolsonoro Tribes</h2>
+        <p>
           Incididunt proident ea Lorem elit quis in ullamco magna ex quis
           proident. Deserunt non laboris amet labore aute elit elit est qui
           consequat minim. Incididunt sint amet aliqua laborum officia irure
           fugiat ex est eu fugiat. Lorem in consequat elit qui in. Eiusmod amet
           nulla amet id amet sit excepteur cupidatat ipsum.
-        </h4>
-        <h2 className="res">Trip itinary</h2>
-        <h4 className="h4">
+        </p>
+        <h2>Trip itinary</h2>
+        <p>
           Incididunt proident ea Lorem elit quis in ullamco magna ex quis
           proident.
-        </h4>
+        </p>
       </section>
       <button className="grad">Download Trip itinary</button>
       <section className="tour">
-        <h2 className="res">Tour Guide</h2>
-        <h5 className="h5">Meet Your trip guide</h5>
+        <h2>Tour Guide</h2>
+        <p>Meet Your trip guide</p>
         <div className="tourguide">
           <div className="man">
             <img
@@ -77,22 +78,22 @@ const Traveller = () => {
                 height: "150px",
                 objectFit: "cover",
                 borderRadius: "50%",
-                marginRight: "50px",
+                marginRight: "20px",
               }}
               alt="guide"
             />
             <div>
-              <h4 className="hh">Ratch ford</h4>
-              <h5 className="hhh">254 Trips</h5>
+              <h4>Ratch</h4>
+              <q>254 Trips</q>
               <h6 className="hhhh">kenyan</h6>
             </div>
           </div>
           <div>
-            <img src={star} alt="stars" style={{ width: "30px" }} />
-            <img src={star} alt="stars" style={{ width: "30px" }} />
-            <img src={star} alt="stars" style={{ width: "30px" }} />
-            <img src={star} alt="stars" style={{ width: "30px" }} />
-            <img src={star} alt="stars" style={{ width: "30px" }} />
+            <img src={star} alt="stars" style={{ width: "20px" }} />
+            <img src={star} alt="stars" style={{ width: "20px" }} />
+            <img src={star} alt="stars" style={{ width: "20px" }} />
+            <img src={star} alt="stars" style={{ width: "20px" }} />
+            <img src={star} alt="stars" style={{ width: "20px" }} />
           </div>
         </div>
       </section>
@@ -126,82 +127,86 @@ const Traveller = () => {
           }}
         >
           <SwiperSlide>
-            <div className="backimage2">
-              <div className="bwrapper">
-                <h6 className="p6">keygs</h6>
-                <p className="pp">Lost America</p>
-                <button className="btn">Book a Trip</button>
-              </div>
-              <div>
-                <h6 className="ppp">$ 5,000</h6>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="backimage2">
-              <div className="bwrapper">
-                <h6 className="p6">keygs</h6>
-                <p className="pp">Lost America</p>
-                <button className="btn">Book a Trip</button>
-              </div>
-              <div>
-                <h6 className="ppp">$ 5,000</h6>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="backimage2">
-              <div className="bwrapper">
-                <h6 className="p6">keygs</h6>
-                <p className="pp">Lost America</p>
-                <button className="btn">Book a Trip</button>
-              </div>
-              <div>
-                <h6 className="ppp">$ 5,000</h6>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="backimage2">
-              <div className="bwrapper">
-                <h6 className="p6">keygs</h6>
-                <p className="pp">Lost America</p>
-                <button className="btn">Book a Trip</button>
-              </div>
-              <div>
-                <h6 className="ppp">$ 5,000</h6>
+            <div
+              style={{
+                width: "300px",
+                height: "200px",
+                borderRadius: "20px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                cursor: "pointer",
+                boxShadow: "0 5px 10px rgb(0 0 0 / 0.2)",
+                padding: "20px",
+                margin: "20px",
+              }}
+            >
+              <div className="bbwrapper">
+                <img
+                  alt="profile"
+                  src={profile}
+                  style={{
+                    width: "50px",
+                    height: "50px",
+                    borderRadius: "50%",
+                    boxShadow: " 0 5px 10px rgb(0 0 0 / 0.6)",
+                  }}
+                />
+                <h4>arwa</h4>
+                <h6>One of the best places in world</h6>
+                <div>
+                  <img src={star} alt="stars" style={{ width: "20px" }} />
+                  <img src={star} alt="stars" style={{ width: "20px" }} />
+                  <img src={star} alt="stars" style={{ width: "20px" }} />
+                  <img src={star} alt="stars" style={{ width: "20px" }} />
+                  <img src={star} alt="stars" style={{ width: "20px" }} />
+                </div>
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="backimage2">
-              <div className="bwrapper">
-                <h6 className="p6">keygs</h6>
-                <p className="pp">Lost America</p>
-                <button className="btn">Book a Trip</button>
-              </div>
-              <div>
-                <h6 className="ppp">$ 5,000</h6>
-              </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="backimage2">
-              <div className="bwrapper">
-                <h6 className="p6">keygs</h6>
-                <p className="pp">Lost America</p>
-                <button className="btn">Book a Trip</button>
-              </div>
-              <div>
-                <h6 className="ppp">$ 5,000</h6>
+            <div
+              style={{
+                width: "300px",
+                height: "200px",
+                borderRadius: "20px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                cursor: "pointer",
+                boxShadow: "0 5px 10px rgb(0 0 0 / 0.2)",
+                padding: "20px",
+                margin: "20px",
+              }}
+            >
+              <div className="bbwrapper">
+                <img
+                  alt="profile"
+                  src={profile}
+                  style={{
+                    width: "50px",
+                    height: "50px",
+                    borderRadius: "50%",
+                    boxShadow: " 0 5px 10px rgb(0 0 0 / 0.6)",
+                  }}
+                />
+                <h4>arwa</h4>
+                <h6>One of the best places in world</h6>
+                <div>
+                  <img src={star} alt="stars" style={{ width: "20px" }} />
+                  <img src={star} alt="stars" style={{ width: "20px" }} />
+                  <img src={star} alt="stars" style={{ width: "20px" }} />
+                  <img src={star} alt="stars" style={{ width: "20px" }} />
+                  <img src={star} alt="stars" style={{ width: "20px" }} />
+                </div>
               </div>
             </div>
           </SwiperSlide>
         </Swiper>
       </section>
       <section className="green">
-        <h4 className="res">Book Trip Now</h4>
-        <h4 className="res">$ 2,899</h4>
+        <h4>Book Trip Now</h4>
+        <h4>$ 2,899</h4>
       </section>
     </section>
   );

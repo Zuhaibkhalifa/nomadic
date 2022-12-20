@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/Styles/Splash.css";
+import "../../assets/Styles/Splash.scss";
 import back from "../../assets/Icons/left-arrow.png";
 import { useNavigate } from "react-router-dom";
 import image from "../../assets/Images/howdoes.jpg";

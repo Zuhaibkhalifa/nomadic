@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../assets/Styles/main.css";
+import "../../assets/Styles/main.scss";
 import home from "../../assets/Icons/home.png";
 import compass from "../../assets/Icons/compass.png";
 import profile from "../../assets/Icons/user.png";
@@ -16,8 +16,6 @@ import "swiper/css/pagination";
 
 // import required modules
 import { FreeMode, Pagination } from "swiper";
-import Login from "../Login/Login";
-
 const Home = () => {
   const [data, setData] = useState([]);
 
@@ -122,7 +120,7 @@ const Home = () => {
                   }}
                 >
                   <div className="bwrapper">
-                    <h6 className="p6">{user.tribes[0].region}</h6>
+                    <h4 className="p6">{user.tribes[0].region}</h4>
                     <p className="pp">{user.tribes[0].name}</p>
                     <button className="btn">Book a Trip</button>
                   </div>
@@ -135,67 +133,68 @@ const Home = () => {
       {data.map((user) => {
         return (
           <section className="slider2">
-            <h4 className="africa">
-              {user._id.region.replaceAll("_", " ").toUpperCase()}
-            </h4>
-
-            <Swiper
-              className="mySwiper"
-              // centeredSlides="true"
-              slidesPerView="auto"
-              breakpoints={{
-                320: {
-                  slidesPerView: 1,
-                },
-                425: {
-                  slidesPerView: 2,
-                  spaceBetween: 250,
-                },
-                768: {
-                  slidesPerView: 3,
-                  spaceBetween: 250,
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
-                },
-                1440: {
-                  slidesPerView: 5,
-                  spaceBetween: 10,
-                },
-              }}
-            >
-              {user.tribes.map((user2) => {
-                return (
-                  <div>
-                    <SwiperSlide>
+            <div>
+              <h4 style={{ width: "10%" }} className="africa">
+                {user._id.region.replaceAll("_", " ").toUpperCase()}
+              </h4>
+            </div>
+            <div style={{ width: "100%", overflow: "hidden" }}>
+              <Swiper
+                slidesPerView={1}
+                breakpoints={{
+                  "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                  },
+                  "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  "@1.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                  },
+                  "@1.50": {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                  },
+                  "@1.75": {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                  },
+                }}
+              >
+                {user.tribes.map((user2) => {
+                  return (
+                    <SwiperSlide
+                      style={{
+                        backgroundImage: `url(${user2.cover_image}`,
+                        backgroundSize: "cover",
+                        objectFit: "cover",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat",
+                        width: "100%",
+                        height: "200px",
+                        borderRadius: "20px",
+                        display: "flex",
+                        justifyContent: "flex-start",
+                        alignItems: "flex-end ",
+                        cursor: "pointer",
+                      }}
+                    >
                       <div
-                        style={{
-                          backgroundImage: `url(${user2.cover_image}`,
-                          backgroundSize: "cover",
-                          objectFit: "cover",
-                          backgroundPosition: "center",
-                          backgroundRepeat: "no-repeat",
-                          width: "300px",
-                          height: "200px",
-                          borderRadius: "20px",
-                          display: "flex",
-                          justifyContent: "space-between ",
-                          alignItems: "flex-end ",
-                          cursor: "pointer",
-                        }}
+                        onClick={() => navigate("/travel")}
+                        className="bwrapper"
                       >
-                        <div className="bwrapper">
-                          <h6 className="p6">{user2.title}</h6>
-                          <p className="pp">{user2.region}</p>
-                          <button className="btn">Book a Trip</button>
-                        </div>
+                        <h4 className="p6">{user2.title}</h4>
+                        <p className="pp">{user2.region}</p>
+                        <button className="btn">Book a Trip</button>
                       </div>
                     </SwiperSlide>
-                  </div>
-                );
-              })}
-            </Swiper>
+                  );
+                })}
+              </Swiper>
+            </div>
           </section>
         );
       })}

@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/Styles/Splash.css";
+import "../../assets/Styles/Splash.scss";
 import back from "../../assets/Icons/left-arrow.png";
 import { useNavigate } from "react-router-dom";
 import avatar from "../../assets/Icons/Group 12.png";
@@ -24,8 +24,8 @@ const Splash1 = () => {
       </section>
       <section className="white">
         <div className="image_class">
-          <h3 className="h3">How Many Times You Travel in a Year?</h3>
-          <img className="image" src={avatar} alt="avatar" />
+          <h3>How Many Times You Travel in a Year?</h3>
+          <img className="images" src={avatar} alt="avatar" />
         </div>
         <div className="wrapper">
           <button className="buttons" onClick={() => navigate("/splash2")}>
